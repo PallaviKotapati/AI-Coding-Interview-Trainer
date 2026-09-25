@@ -1,0 +1,3466 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "function_name": "two_sum",
+    "description": "Given a list of integers and a target value, return the indices of two numbers whose sum equals the target.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            2,
+            7,
+            11,
+            15
+          ],
+          9
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      },
+      {
+        "args": [
+          [
+            3,
+            2,
+            4
+          ],
+          6
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "args": [
+          [
+            3,
+            3
+          ],
+          6
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "array",
+      "hashmap"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Binary Search",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "function_name": "binary_search",
+    "description": "Given a sorted list of integers and a target value, return the index of the target. Return -1 if the target is not present.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9
+          ],
+          7
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9
+          ],
+          2
+        ],
+        "expected": -1
+      },
+      {
+        "args": [
+          [
+            1
+          ],
+          1
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(log n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "binary-search",
+      "array"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Valid Parentheses",
+    "topic": "Stack",
+    "difficulty": "Easy",
+    "function_name": "is_valid",
+    "description": "Given a string containing parentheses, determine whether every opening bracket is closed by the correct type of closing bracket.",
+    "test_cases": [
+      {
+        "args": [
+          "()[]{}"
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          "([)]"
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          "{[]}"
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "stack",
+      "string"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Reverse String",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "function_name": "reverse_string",
+    "description": "Given a string, return the string with its characters in reverse order.",
+    "test_cases": [
+      {
+        "args": [
+          "hello"
+        ],
+        "expected": "olleh"
+      },
+      {
+        "args": [
+          "python"
+        ],
+        "expected": "nohtyp"
+      },
+      {
+        "args": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "string"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Maximum Subarray",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "max_subarray",
+    "description": "Given an integer array, find the contiguous subarray with the largest sum and return that sum.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            -2,
+            1,
+            -3,
+            4,
+            -1,
+            2,
+            1,
+            -5,
+            4
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            5,
+            4,
+            -1,
+            7,
+            8
+          ]
+        ],
+        "expected": 23
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "First Non-Repeating Character",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "function_name": "first_unique_char",
+    "description": "Given a string, return the index of the first character that occurs exactly once. Return -1 if no such character exists.",
+    "test_cases": [
+      {
+        "args": [
+          "leetcode"
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          "loveleetcode"
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          "aabb"
+        ],
+        "expected": -1
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(k)",
+    "tags": [
+      "hashmap",
+      "string"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Fibonacci Number",
+    "topic": "Dynamic Programming",
+    "difficulty": "Easy",
+    "function_name": "fibonacci",
+    "description": "Return the nth Fibonacci number where F(0)=0 and F(1)=1.",
+    "test_cases": [
+      {
+        "args": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          6
+        ],
+        "expected": 8
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": 55
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "dynamic-programming",
+      "recursion"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Merge Two Sorted Arrays",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "merge_sorted",
+    "description": "Given two sorted integer arrays, return one sorted array containing all elements from both arrays.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "args": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "args": [
+          [
+            1
+          ],
+          []
+        ],
+        "expected": [
+          1
+        ]
+      }
+    ],
+    "expected_time": "O(n+m)",
+    "expected_space": "O(n+m)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Contains Duplicate",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "function_name": "contains_duplicate",
+    "description": "Given a list of integers, return True if any value appears at least twice, otherwise return False.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "array",
+      "hashset"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Best Time to Buy and Sell Stock",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "function_name": "max_profit",
+    "description": "Given daily stock prices, find the maximum profit possible from buying on one day and selling on a later day.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            7,
+            1,
+            5,
+            3,
+            6,
+            4
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          [
+            7,
+            6,
+            4,
+            3,
+            1
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "greedy"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Move Zeroes",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "function_name": "move_zeroes",
+    "description": "Move all zeroes in an array to the end while maintaining the relative order of the non-zero elements. Return the modified array.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            0,
+            1,
+            0,
+            3,
+            12
+          ]
+        ],
+        "expected": [
+          1,
+          3,
+          12,
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Valid Anagram",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "function_name": "is_anagram",
+    "description": "Given two strings, determine whether they are anagrams of each other.",
+    "test_cases": [
+      {
+        "args": [
+          "anagram",
+          "nagaram"
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          "rat",
+          "car"
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          "listen",
+          "silent"
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "string",
+      "hashmap"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Valid Palindrome",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "function_name": "is_palindrome",
+    "description": "Determine whether a string is a palindrome after converting uppercase letters to lowercase and ignoring non-alphanumeric characters.",
+    "test_cases": [
+      {
+        "args": [
+          "A man, a plan, a canal: Panama"
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          "race a car"
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          " "
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "string",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Longest Common Prefix",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "function_name": "longest_common_prefix",
+    "description": "Find the longest common prefix shared by all strings in a list.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            "flower",
+            "flow",
+            "flight"
+          ]
+        ],
+        "expected": "fl"
+      },
+      {
+        "args": [
+          [
+            "dog",
+            "racecar",
+            "car"
+          ]
+        ],
+        "expected": ""
+      },
+      {
+        "args": [
+          [
+            "interview",
+            "internet",
+            "internal"
+          ]
+        ],
+        "expected": "inter"
+      }
+    ],
+    "expected_time": "O(n*m)",
+    "expected_space": "O(1)",
+    "tags": [
+      "string"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Search Insert Position",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "function_name": "search_insert",
+    "description": "Given a sorted array and a target value, return the index if found. Otherwise return the index where it should be inserted.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            3,
+            5,
+            6
+          ],
+          5
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            1,
+            3,
+            5,
+            6
+          ],
+          2
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            1,
+            3,
+            5,
+            6
+          ],
+          7
+        ],
+        "expected": 4
+      }
+    ],
+    "expected_time": "O(log n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Missing Number",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "function_name": "missing_number",
+    "description": "Given an array containing n distinct numbers from 0 to n, return the only number missing.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            3,
+            0,
+            1
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            0,
+            1
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            9,
+            6,
+            4,
+            2,
+            3,
+            5,
+            7,
+            0,
+            1
+          ]
+        ],
+        "expected": 8
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "math"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Single Number",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "function_name": "single_number",
+    "description": "Every element appears twice except one. Find the element that appears only once.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            4,
+            1,
+            2,
+            1,
+            2
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Majority Element",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "function_name": "majority_element",
+    "description": "Given an array, return the element that appears more than n/2 times.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            3,
+            2,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            2,
+            2,
+            1,
+            1,
+            1,
+            2,
+            2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "boyer-moore"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Product of Array Except Self",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "product_except_self",
+    "description": "Return an array where each element is the product of all elements except the element at that index.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          24,
+          12,
+          8,
+          6
+        ]
+      },
+      {
+        "args": [
+          [
+            -1,
+            1,
+            0,
+            -3,
+            3
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          3,
+          2
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "prefix-product"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Maximum Product Subarray",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "max_product",
+    "description": "Find the contiguous subarray with the largest product.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            2,
+            3,
+            -2,
+            4
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            -2,
+            0,
+            -1
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            -2,
+            3,
+            -4
+          ]
+        ],
+        "expected": 24
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Climbing Stairs",
+    "topic": "Dynamic Programming",
+    "difficulty": "Easy",
+    "function_name": "climb_stairs",
+    "description": "You can climb either one or two steps at a time. Return the number of distinct ways to reach the top of n steps.",
+    "test_cases": [
+      {
+        "args": [
+          2
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          3
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          5
+        ],
+        "expected": 8
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "House Robber",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "function_name": "rob",
+    "description": "Given money in houses along a street, maximize the amount stolen without robbing adjacent houses.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          [
+            2,
+            7,
+            9,
+            3,
+            1
+          ]
+        ],
+        "expected": 12
+      },
+      {
+        "args": [
+          [
+            2,
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": 4
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Coin Change",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "function_name": "coin_change",
+    "description": "Given coin denominations and an amount, return the fewest number of coins needed to make that amount. Return -1 if impossible.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            5
+          ],
+          11
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            2
+          ],
+          3
+        ],
+        "expected": -1
+      },
+      {
+        "args": [
+          [
+            1
+          ],
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(amount * coins)",
+    "expected_space": "O(amount)",
+    "tags": [
+      "dynamic-programming",
+      "coin-change"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Fibonacci Number",
+    "topic": "Dynamic Programming",
+    "difficulty": "Easy",
+    "function_name": "fibonacci",
+    "description": "Return the nth Fibonacci number.",
+    "test_cases": [
+      {
+        "args": [
+          2
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          5
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": 55
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "dynamic-programming",
+      "recursion"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Length of Last Word",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "function_name": "length_of_last_word",
+    "description": "Given a string containing words and spaces, return the length of the last word.",
+    "test_cases": [
+      {
+        "args": [
+          "Hello World"
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          "   fly me   to   the moon  "
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          "luffy is still joyboy"
+        ],
+        "expected": 6
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "string"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Reverse Words in a String",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "function_name": "reverse_words",
+    "description": "Reverse the order of words in a string and remove extra spaces.",
+    "test_cases": [
+      {
+        "args": [
+          "the sky is blue"
+        ],
+        "expected": "blue is sky the"
+      },
+      {
+        "args": [
+          "  hello world  "
+        ],
+        "expected": "world hello"
+      },
+      {
+        "args": [
+          "a good   example"
+        ],
+        "expected": "example good a"
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "string"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "First Unique Character",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "function_name": "first_unique_char",
+    "description": "Return the index of the first non-repeating character in a string. Return -1 if none exists.",
+    "test_cases": [
+      {
+        "args": [
+          "leetcode"
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          "loveleetcode"
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          "aabb"
+        ],
+        "expected": -1
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "string",
+      "hashmap"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Group Anagrams",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "function_name": "group_anagrams",
+    "description": "Group strings that are anagrams of each other. Return the groups as a list.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            "eat",
+            "tea",
+            "tan",
+            "ate",
+            "nat",
+            "bat"
+          ]
+        ],
+        "expected": [
+          [
+            "eat",
+            "tea",
+            "ate"
+          ],
+          [
+            "tan",
+            "nat"
+          ],
+          [
+            "bat"
+          ]
+        ]
+      }
+    ],
+    "expected_time": "O(n*k)",
+    "expected_space": "O(n*k)",
+    "tags": [
+      "hashmap",
+      "string"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Top K Frequent Elements",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "function_name": "top_k_frequent",
+    "description": "Return the k most frequent elements in an array.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            1,
+            1,
+            2,
+            2,
+            3
+          ],
+          2
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "args": [
+          [
+            1
+          ],
+          1
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "args": [
+          [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6
+          ],
+          1
+        ],
+        "expected": [
+          4
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "hashmap",
+      "heap"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Three Sum",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "three_sum",
+    "description": "Find all unique triplets in an array that sum to zero.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            -1,
+            0,
+            1,
+            2,
+            -1,
+            -4
+          ]
+        ],
+        "expected": [
+          [
+            -1,
+            -1,
+            2
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "args": [
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "expected_time": "O(n^2)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Merge Intervals",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "merge_intervals",
+    "description": "Merge all overlapping intervals and return the resulting non-overlapping intervals.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              15,
+              18
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            6
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            15,
+            18
+          ]
+        ]
+      },
+      {
+        "args": [
+          [
+            [
+              1,
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            5
+          ]
+        ]
+      }
+    ],
+    "expected_time": "O(n log n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "array",
+      "sorting"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Insert Interval",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "insert_interval",
+    "description": "Insert a new interval into a sorted list of non-overlapping intervals and merge if necessary.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            [
+              1,
+              3
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            9
+          ]
+        ]
+      },
+      {
+        "args": [
+          [],
+          [
+            5,
+            7
+          ]
+        ],
+        "expected": [
+          [
+            5,
+            7
+          ]
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "array",
+      "intervals"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Matrix Transpose",
+    "topic": "Matrix",
+    "difficulty": "Easy",
+    "function_name": "transpose",
+    "description": "Return the transpose of a matrix.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              6
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      {
+        "args": [
+          [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    ],
+    "expected_time": "O(m*n)",
+    "expected_space": "O(m*n)",
+    "tags": [
+      "matrix"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Spiral Matrix",
+    "topic": "Matrix",
+    "difficulty": "Medium",
+    "function_name": "spiral_order",
+    "description": "Return all elements of a matrix in spiral order.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              6
+            ],
+            [
+              7,
+              8,
+              9
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          6,
+          9,
+          8,
+          7,
+          4,
+          5
+        ]
+      },
+      {
+        "args": [
+          [
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "expected_time": "O(m*n)",
+    "expected_space": "O(m*n)",
+    "tags": [
+      "matrix"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Rotate Array",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "rotate_array",
+    "description": "Rotate an array to the right by k positions and return the resulting array.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          3
+        ],
+        "expected": [
+          5,
+          6,
+          7,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "args": [
+          [
+            -1,
+            -100,
+            3,
+            99
+          ],
+          2
+        ],
+        "expected": [
+          3,
+          99,
+          -1,
+          -100
+        ]
+      },
+      {
+        "args": [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "array"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Intersection of Two Arrays",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "function_name": "intersection",
+    "description": "Return the unique elements that appear in both arrays.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "expected": [
+          2
+        ]
+      },
+      {
+        "args": [
+          [
+            4,
+            9,
+            5
+          ],
+          [
+            9,
+            4,
+            9,
+            8,
+            4
+          ]
+        ],
+        "expected": [
+          4,
+          9
+        ]
+      },
+      {
+        "args": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "expected": []
+      }
+    ],
+    "expected_time": "O(n+m)",
+    "expected_space": "O(n+m)",
+    "tags": [
+      "hashset",
+      "array"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Count Vowels",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "function_name": "count_vowels",
+    "description": "Count the number of vowels in a string. Treat uppercase and lowercase vowels equally.",
+    "test_cases": [
+      {
+        "args": [
+          "hello"
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          "AEIOU"
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          "xyz"
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "string"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Reverse Integer",
+    "topic": "Math",
+    "difficulty": "Medium",
+    "function_name": "reverse_integer",
+    "description": "Reverse the digits of an integer. Return 0 if the reversed value overflows the 32-bit signed integer range.",
+    "test_cases": [
+      {
+        "args": [
+          123
+        ],
+        "expected": 321
+      },
+      {
+        "args": [
+          -123
+        ],
+        "expected": -321
+      },
+      {
+        "args": [
+          120
+        ],
+        "expected": 21
+      }
+    ],
+    "expected_time": "O(log n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Palindrome Number",
+    "topic": "Math",
+    "difficulty": "Easy",
+    "function_name": "is_palindrome_number",
+    "description": "Determine whether an integer reads the same forward and backward.",
+    "test_cases": [
+      {
+        "args": [
+          121
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          -121
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          10
+        ],
+        "expected": false
+      }
+    ],
+    "expected_time": "O(log n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Power of Two",
+    "topic": "Math",
+    "difficulty": "Easy",
+    "function_name": "is_power_of_two",
+    "description": "Return True if n is a power of two, otherwise return False.",
+    "test_cases": [
+      {
+        "args": [
+          1
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          16
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          18
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          0
+        ],
+        "expected": false
+      }
+    ],
+    "expected_time": "O(1)",
+    "expected_space": "O(1)",
+    "tags": [
+      "math",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Maximum Sum Circular Subarray",
+    "topic": "Arrays",
+    "difficulty": "Hard",
+    "function_name": "max_subarray_circular",
+    "description": "Given a circular integer array, find the maximum possible sum of a non-empty subarray.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            -2,
+            3,
+            -2
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            5,
+            -3,
+            5
+          ]
+        ],
+        "expected": 10
+      },
+      {
+        "args": [
+          [
+            -3,
+            -2,
+            -3
+          ]
+        ],
+        "expected": -2
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "kadane",
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Jump Game",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "can_jump",
+    "description": "Given an array where each element represents the maximum jump length from that position, determine whether you can reach the last index.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            2,
+            3,
+            1,
+            1,
+            4
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            3,
+            2,
+            1,
+            0,
+            4
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "greedy"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Jump Game II",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "min_jumps",
+    "description": "Return the minimum number of jumps required to reach the last index.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            2,
+            3,
+            1,
+            1,
+            4
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            2,
+            3,
+            0,
+            1,
+            4
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": 3
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "greedy"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Container With Most Water",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "function_name": "max_area",
+    "description": "Given heights of vertical lines, find two lines that together contain the most water.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            8,
+            6,
+            2,
+            5,
+            4,
+            8,
+            3,
+            7
+          ]
+        ],
+        "expected": 49
+      },
+      {
+        "args": [
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            4,
+            3,
+            2,
+            1,
+            4
+          ]
+        ],
+        "expected": 16
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Trapping Rain Water",
+    "topic": "Arrays",
+    "difficulty": "Hard",
+    "function_name": "trap_rain_water",
+    "description": "Given an array representing elevation heights, calculate how much rainwater can be trapped.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            3,
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            4,
+            2,
+            0,
+            3,
+            2,
+            5
+          ]
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Longest Substring Without Repeating Characters",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "function_name": "longest_unique_substring",
+    "description": "Find the length of the longest substring without repeating characters.",
+    "test_cases": [
+      {
+        "args": [
+          "abcabcbb"
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          "bbbbb"
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          "pwwkew"
+        ],
+        "expected": 3
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "string",
+      "sliding-window"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Longest Palindromic Substring",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "function_name": "longest_palindrome",
+    "description": "Return the longest palindromic substring in a given string.",
+    "test_cases": [
+      {
+        "args": [
+          "babad"
+        ],
+        "expected": "bab"
+      },
+      {
+        "args": [
+          "cbbd"
+        ],
+        "expected": "bb"
+      },
+      {
+        "args": [
+          "a"
+        ],
+        "expected": "a"
+      }
+    ],
+    "expected_time": "O(n^2)",
+    "expected_space": "O(1)",
+    "tags": [
+      "string",
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Minimum Window Substring",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "function_name": "min_window",
+    "description": "Find the smallest substring of s that contains all characters of t.",
+    "test_cases": [
+      {
+        "args": [
+          "ADOBECODEBANC",
+          "ABC"
+        ],
+        "expected": "BANC"
+      },
+      {
+        "args": [
+          "a",
+          "a"
+        ],
+        "expected": "a"
+      },
+      {
+        "args": [
+          "a",
+          "aa"
+        ],
+        "expected": ""
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "string",
+      "sliding-window",
+      "hashmap"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "String Compression",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "function_name": "compress_string",
+    "description": "Compress consecutive repeated characters using the character followed by its count.",
+    "test_cases": [
+      {
+        "args": [
+          "aabcccccaaa"
+        ],
+        "expected": "a2b1c5a3"
+      },
+      {
+        "args": [
+          "abc"
+        ],
+        "expected": "a1b1c1"
+      },
+      {
+        "args": [
+          "aaaa"
+        ],
+        "expected": "a4"
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "string"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Edit Distance",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "function_name": "edit_distance",
+    "description": "Return the minimum number of insertions, deletions, and replacements needed to convert one string into another.",
+    "test_cases": [
+      {
+        "args": [
+          "horse",
+          "ros"
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          "intention",
+          "execution"
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          "",
+          "abc"
+        ],
+        "expected": 3
+      }
+    ],
+    "expected_time": "O(m*n)",
+    "expected_space": "O(m*n)",
+    "tags": [
+      "string",
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Search in Rotated Sorted Array",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "function_name": "search_rotated",
+    "description": "Search for a target in a rotated sorted array and return its index, or -1 if not found.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            4,
+            5,
+            6,
+            7,
+            0,
+            1,
+            2
+          ],
+          0
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          [
+            4,
+            5,
+            6,
+            7,
+            0,
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": -1
+      },
+      {
+        "args": [
+          [
+            1
+          ],
+          0
+        ],
+        "expected": -1
+      }
+    ],
+    "expected_time": "O(log n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Find Minimum in Rotated Sorted Array",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "function_name": "find_min",
+    "description": "Find the minimum element in a rotated sorted array.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            3,
+            4,
+            5,
+            1,
+            2
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            4,
+            5,
+            6,
+            7,
+            0,
+            1,
+            2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            11,
+            13,
+            15,
+            17
+          ]
+        ],
+        "expected": 11
+      }
+    ],
+    "expected_time": "O(log n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Median of Two Sorted Arrays",
+    "topic": "Binary Search",
+    "difficulty": "Hard",
+    "function_name": "find_median_sorted_arrays",
+    "description": "Find the median of two sorted arrays.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            3
+          ],
+          [
+            2
+          ]
+        ],
+        "expected": 2.0
+      },
+      {
+        "args": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "expected": 2.5
+      },
+      {
+        "args": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "expected": 0.0
+      }
+    ],
+    "expected_time": "O(log(min(m,n)))",
+    "expected_space": "O(1)",
+    "tags": [
+      "binary-search",
+      "array"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Daily Temperatures",
+    "topic": "Stack",
+    "difficulty": "Medium",
+    "function_name": "daily_temperatures",
+    "description": "For each day, return how many days you must wait until a warmer temperature.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            73,
+            74,
+            75,
+            71,
+            69,
+            72,
+            76,
+            73
+          ]
+        ],
+        "expected": [
+          1,
+          1,
+          4,
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            30,
+            40,
+            50,
+            60
+          ]
+        ],
+        "expected": [
+          1,
+          1,
+          1,
+          0
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "stack",
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Evaluate Reverse Polish Notation",
+    "topic": "Stack",
+    "difficulty": "Medium",
+    "function_name": "eval_rpn",
+    "description": "Evaluate an arithmetic expression written in Reverse Polish Notation.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            "2",
+            "1",
+            "+",
+            "3",
+            "*"
+          ]
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            "4",
+            "13",
+            "5",
+            "/",
+            "+"
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            "10",
+            "6",
+            "9",
+            "3",
+            "+",
+            "-11",
+            "*",
+            "/",
+            "*",
+            "17",
+            "+",
+            "5",
+            "+"
+          ]
+        ],
+        "expected": 22
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "stack"
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Largest Rectangle in Histogram",
+    "topic": "Stack",
+    "difficulty": "Hard",
+    "function_name": "largest_rectangle",
+    "description": "Given bar heights in a histogram, find the largest rectangular area.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            2,
+            1,
+            5,
+            6,
+            2,
+            3
+          ]
+        ],
+        "expected": 10
+      },
+      {
+        "args": [
+          [
+            2,
+            4
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": 3
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "stack",
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Reverse Linked List",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "function_name": "reverse_list",
+    "description": "Reverse a singly linked list represented as a Python list and return the reversed list.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "args": [
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "linked-list"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Middle of Linked List",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "function_name": "middle_node",
+    "description": "Return the middle element of a list. For an even-length list, return the second middle element.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "linked-list",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Detect Cycle",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "function_name": "has_cycle",
+    "description": "Given a list and a cycle entry index, determine whether the linked list contains a cycle.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            3,
+            2,
+            0,
+            -4
+          ],
+          1
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            1,
+            2
+          ],
+          0
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            1
+          ],
+          -1
+        ],
+        "expected": false
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "linked-list",
+      "two-pointers"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Assign Cookies",
+    "topic": "Greedy",
+    "difficulty": "Easy",
+    "function_name": "assign_cookies",
+    "description": "Given children's greed factors and cookie sizes, maximize the number of children who can be satisfied.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            10
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(n log n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "greedy",
+      "sorting"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "Lemonade Change",
+    "topic": "Greedy",
+    "difficulty": "Easy",
+    "function_name": "lemonade_change",
+    "description": "Determine whether you can provide correct change to every customer in sequence when lemonade costs $5.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            5,
+            5,
+            5,
+            10,
+            20
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            5,
+            5,
+            10,
+            10,
+            20
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            5,
+            5,
+            5,
+            5,
+            10,
+            5,
+            10,
+            10,
+            10,
+            20
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "greedy"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Gas Station",
+    "topic": "Greedy",
+    "difficulty": "Medium",
+    "function_name": "can_complete_circuit",
+    "description": "Given gas available and gas cost between stations, return the starting station index that allows completing the circuit, or -1.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            3,
+            4,
+            5,
+            1,
+            2
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            3
+          ]
+        ],
+        "expected": -1
+      },
+      {
+        "args": [
+          [
+            5
+          ],
+          [
+            4
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(1)",
+    "tags": [
+      "greedy"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Longest Increasing Subsequence",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "function_name": "lis_length",
+    "description": "Return the length of the longest strictly increasing subsequence.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            10,
+            9,
+            2,
+            5,
+            3,
+            7,
+            101,
+            18
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          [
+            0,
+            1,
+            0,
+            3,
+            2,
+            3
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          [
+            7,
+            7,
+            7,
+            7
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "expected_time": "O(n^2)",
+    "expected_space": "O(n)",
+    "tags": [
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "0/1 Knapsack",
+    "topic": "Dynamic Programming",
+    "difficulty": "Hard",
+    "function_name": "knapsack",
+    "description": "Given item weights, values, and a capacity, return the maximum value that can be carried without exceeding the capacity.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            5,
+            7
+          ],
+          7
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          5
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(n*capacity)",
+    "expected_space": "O(capacity)",
+    "tags": [
+      "dynamic-programming",
+      "knapsack"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Partition Equal Subset Sum",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "function_name": "can_partition",
+    "description": "Determine whether an array can be partitioned into two subsets with equal sum.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            1,
+            5,
+            11,
+            5
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            1,
+            2,
+            3,
+            5
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n*sum)",
+    "expected_space": "O(sum)",
+    "tags": [
+      "dynamic-programming"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Maximum Depth of Binary Tree",
+    "topic": "Trees",
+    "difficulty": "Easy",
+    "function_name": "max_depth",
+    "description": "Given a binary tree represented as a nested list [value, left, right], return its maximum depth.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            3,
+            [
+              9,
+              null,
+              null
+            ],
+            [
+              20,
+              [
+                15,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            1,
+            null,
+            [
+              2,
+              null,
+              null
+            ]
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          null
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(h)",
+    "tags": [
+      "tree",
+      "recursion"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Binary Tree Level Order Traversal",
+    "topic": "Trees",
+    "difficulty": "Medium",
+    "function_name": "level_order",
+    "description": "Return the level-order traversal of a binary tree represented as a nested structure.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            3,
+            [
+              9,
+              null,
+              null
+            ],
+            [
+              20,
+              [
+                15,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            3
+          ],
+          [
+            9,
+            20
+          ],
+          [
+            15,
+            7
+          ]
+        ]
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(n)",
+    "tags": [
+      "tree",
+      "bfs"
+    ]
+  },
+  {
+    "id": 68,
+    "title": "Validate Binary Search Tree",
+    "topic": "Trees",
+    "difficulty": "Medium",
+    "function_name": "is_valid_bst",
+    "description": "Determine whether a binary tree satisfies the binary search tree property.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            5,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            1,
+            null,
+            null
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(n)",
+    "expected_space": "O(h)",
+    "tags": [
+      "tree",
+      "dfs"
+    ]
+  },
+  {
+    "id": 69,
+    "title": "Number of Islands",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "function_name": "num_islands",
+    "description": "Given a grid of 1s and 0s, count the number of connected groups of 1s.",
+    "test_cases": [
+      {
+        "args": [
+          [
+            [
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "1"
+            ]
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            "0"
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "expected_time": "O(m*n)",
+    "expected_space": "O(m*n)",
+    "tags": [
+      "graph",
+      "bfs",
+      "dfs"
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Course Schedule",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "function_name": "can_finish",
+    "description": "Given the number of courses and prerequisite pairs, determine whether all courses can be completed.",
+    "test_cases": [
+      {
+        "args": [
+          2,
+          [
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          2,
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          3,
+          [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "expected_time": "O(V+E)",
+    "expected_space": "O(V+E)",
+    "tags": [
+      "graph",
+      "topological-sort"
+    ]
+  }
+]

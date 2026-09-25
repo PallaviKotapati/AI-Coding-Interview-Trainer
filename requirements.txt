@@ -1,0 +1,8 @@
+gradio
+pandas
+numpy
+scikit-learn
+chromadb
+sentence-transformers
+requests
+python-dotenv
