@@ -36,8 +36,10 @@ The AI Coding Interview Trainer simulates realistic technical interview rounds. 
 
 ## Current Development Status
 
-- **Phase 1 (In Progress):** Development environment setup using Python 3.12 virtual environment, dependency management, and project baseline structure.
-- **Phase 2 (Upcoming):** Dataset compilation and ChromaDB RAG vector indexing.
-- **Phase 3 (Upcoming):** Code evaluation sandbox and AST complexity analyzer.
-- **Phase 4 (Upcoming):** Local LLM integration with Mistral 7B via Ollama.
-- **Phase 5 (Upcoming):** Gradio web interface assembly and end-to-end testing.
+## Current Development Status
+
+- **Phase 1 (Completed):** Development environment setup using Python 3.12 virtual environment, dependency management, and project base structure.
+- **Phase 2 (Completed):** DSA dataset compilation and RAG retrieval setup using ChromaDB and sentence-transformer embeddings.
+- **Phase 3 (Completed):** Code evaluation sandbox and AST-based time and space complexity analyzer.
+- **Phase 4 (Completed):** Local LLM integration with Mistral via Ollama for AI-generated interview feedback.
+- **Phase 5 (Completed):** Gradio web interface assembly and end-to-end testing of question generation, code evaluation, complexity analysis, and RAG-based feedback.
